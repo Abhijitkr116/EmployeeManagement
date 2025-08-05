@@ -28,5 +28,7 @@ namespace Saurav.DataAccess
             builder.Entity<IdentityRoleClaim<string>>().ToTable("RoleClaim");
         }
 
+        public DbSet<Eproduct> TblProduct { get; set; }
+
     }
 }

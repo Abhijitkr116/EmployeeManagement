@@ -1,6 +1,12 @@
-﻿namespace Saurav.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+
+namespace Saurav.Controllers
 {
-    public class EmployeeController
+    public class EmployeeController : Controller
     {
+        public IActionResult Dashboard(){
+            return View();
+        }
     }
 }
